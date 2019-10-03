@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ITT\\Documents\\Juegos\\JuegoDeLaVida\\JuegoDeLaVida.csproj",
+      "projectUniqueName": "C:\\Users\\ITT\\Documents\\oop\\JuegoDeLaVida\\JuegoDeLaVida.csproj",
       "projectName": "JuegoDeLaVida",
-      "projectPath": "C:\\Users\\ITT\\Documents\\Juegos\\JuegoDeLaVida\\JuegoDeLaVida.csproj",
+      "projectPath": "C:\\Users\\ITT\\Documents\\oop\\JuegoDeLaVida\\JuegoDeLaVida.csproj",
       "packagesPath": "C:\\Users\\ITT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ITT\\Documents\\Juegos\\JuegoDeLaVida\\obj\\",
+      "outputPath": "C:\\Users\\ITT\\Documents\\oop\\JuegoDeLaVida\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
