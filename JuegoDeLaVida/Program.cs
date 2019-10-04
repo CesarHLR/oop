@@ -23,6 +23,19 @@ namespace JuegoDeLaVida
         }
         public void actualiza_estado()
         {
+            estado_actual=estado_siguiente;
+        }
+        
+        public void actualiza_estado_siguiente()
+        {
+            //Actualiza estado_siguiente
+            //Siguiendo las reglas del juego
+
+            //Ejemplo:
+            if(num_vecinas() == 1)
+            {
+                estado_siguiente=Estado.viva;
+            }
 
         }
         public short num_vecinas()
@@ -36,6 +49,7 @@ namespace JuegoDeLaVida
                     cuenta++;
                 }
             }
+            //Falta hacer lo mismo para las otras vecinas
             return cuenta;
         }
         
@@ -86,6 +100,18 @@ namespace JuegoDeLaVida
          {
              grid[c.renglon][c.columna]=c;
          }
+         
+         public void actualiza_estado_todas()
+         {
+             foreach(List<Celula> renglon in grid )
+             {
+                foreach(Celula c in renglon )
+                {
+                    c.actualiza_estado();
+                }
+             }
+         }
+         //Cambia el estado de todas las celdas
          public void print()
          {
              foreach(List<Celula> renglon in grid )
@@ -114,7 +140,14 @@ namespace JuegoDeLaVida
          Gol.inserta(new Celula(Estado.viva, Gol, 0,0 ));
          
          Gol.print();
-         Console.WriteLine(Gol.grid [1],[1].num_vecinas());
+         
+         // Actualizar el estado_siguiente de todas las celulas
+         // Actualizar el estado_actual con el siguiente
+         // Volver a imprimir 
+         //Repetir haciendo una pausa
+
+         Console.WriteLine(Gol.grid [1][1].num_vecinas());
         }
     }
   }
+
